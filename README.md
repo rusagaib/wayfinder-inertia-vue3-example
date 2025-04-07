@@ -1,6 +1,6 @@
 ## wayfinder-inertia-vue3-example 
 
-a very stupidly simple application to test run a new laravel wayfinder types definition importer, to integrating with your Laravel12 + inertia + vue3 setup replacing previous tightenco/ziggy
+a very stupidly simple application to test run a new laravel wayfinder types definition importer, to integrating with your Laravel12 + inertia + vue3 setup replacing previous [tightenco/ziggy](https://github.com/tighten/ziggy)
 
 ## Environment i used:
 
@@ -43,10 +43,10 @@ without needed seperate terminal console for run `npm run dev` for vite-frontend
 
 ## Notes
 
-[ 2025-04-07 12:49 ] - laravel wayfinder still on beta stages so i recomended to stick with [tightenco/ziggy]('https://github.com/tighten/ziggy') for building laravel12 + inertia + vue3.
-this project example purpose just for preview how easy it's to use new package from [laravel/wayfinder]('https://github.com/laravel/wayfinder') to integrate with your inertia and vue3 setup for laravel12 project
+[ 2025-04-07 12:49 ] - laravel wayfinder still on beta stages so i recomended to stick with [tightenco/ziggy](https://github.com/tighten/ziggy) for building laravel12 + inertia + vue3.
+this project example purpose just for preview how easy it's to use new package from [laravel/wayfinder](https://github.com/laravel/wayfinder) to integrate with your inertia and vue3 setup for laravel12 project
 and 
 
 **I NOT recomended using this example to use on production!!** 
 
-until there was future stable release from official [laravel/wayfinder]('https://github.com/laravel/wayfinder') so stay tune and make more awesome stuff.. 
+until there was future stable release from official [laravel/wayfinder](https://github.com/laravel/wayfinder) so stay tune and make more awesome stuff.. 
