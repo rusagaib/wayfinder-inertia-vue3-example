@@ -10,24 +10,32 @@ a very stupidly simple application to test run a new laravel wayfinder types def
 ## Instalation:
 
 ```sh
+git clone https://github.com/rusagaib/wayfinder-inertia-vue3-example.git 
+cd wayfinder-inertia-vue3-example
+# install package ./vendor and ./node_modules
 composer install
 npm install
+# generate laravel APP_KEY on .env
+cp .env.example .env
+php artisan key:generate
+# migrate db (use sqlite) -> output db on ./database/database.sqlite
+php artian migrate
 ```
 
 ## Run (with hot-reload):
 
-1. run laravel backend:
+**1. run laravel backend:**
 
 ```sh
 php artisan serve
 ```
-2. run the vite-frontend instance using seperate terminal console:
+**2. run the vite-frontend instance using seperate terminal console then run:**
 
 ```sh
 npm run dev
 ```
 
-### *Optonal* Build the assets so you just only run 'php artisan serve' (but no hot reload):  
+### *Optonal* - Build the assets so you just only run `php artisan serve` (but no hot reload):  
 
 build frontend assets:
 
@@ -40,6 +48,33 @@ then after build finish just run:
 php artisan serve
 ```
 without needed seperate terminal console for run `npm run dev` for vite-frontend intance
+
+## *Adding new controller or routes:
+
+everytime for instances you add new controller or routes on ./routes/web.php etc..
+
+you'll need to generate freshly new type definition .ts for route and action that laravel/wayfinder generate for you to use..
+
+to generate routes or action using laravel/wayfinder run:
+
+```sh
+php artisan wayfinder:generate
+```
+
+also please notice sometimes if you make some changes on the laravel project, theres posibiliy it's still have old cache/config there so you'll need to make sure clear those cache:
+
+```sh 
+# clear old cache/config
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+
+# then after that you generate wayfinder routes and action
+php artisan wayfinder:generate
+```
+
+**For more info please check out official repo documentation here:**
+- [laravel/wayfinder](https://github.com/laravel/wayfinder)
 
 ## Notes
 
