@@ -4,8 +4,12 @@ a very stupidly simple application to test run a new laravel wayfinder types def
 
 ## Environment i used:
 
-- php8.3 
+- php 8.3.19 
+- composer 2.7.6
 - node 20.9.0
+- npm 10.1.0
+- [@inertiajs/vue3@2.0.6](https://github.com/inertiajs/inertia/releases/tag/v2.0.6)
+- [vite@6.2.5](https://github.com/vitejs/vite/releases/tag/v6.2.5)
 
 ## Instalation:
 
